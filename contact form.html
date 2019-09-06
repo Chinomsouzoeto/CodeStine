@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact Form</title>
+	<link rel="stylesheet" type="text/css" href="../learn html/My CV contact form styling.css">
+	
+</head>
+	<div class="border-body">
+	<div class="header-1">
+		<h1>Contact Form</h1>
+	</div>
+	<div class="header-2">
+		<p><block>Please fill this form, and I will get back to you immediately</block></p>
+	</div>
+
+	<!-- Forms -->
+	<form class="my-form" action="process.php" method="POST">
+	<div>
+		<input class="input" type="text" name="Name" placeholder="Enter your name" required minlength="4">
+	</div>
+	
+	<br>
+	<div>
+		<input class="input" type="email" id="email" title="The domain portion of the email address is invalid (the portion after the @)" pattern="^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*$" name="Email" placeholder="Enter your email address" required>
+	</div>
+	<br>
+	<div>
+		<input class="input" type="text" name="title" placeholder="Enter message title" required>
+	</div>
+	<br>
+	<div>
+		<textarea class="input" type="text" name="Message" placeholder="Enter the body of your message here" required minlength="20"></textarea>
+	</div>
+
+	<br>
+	
+	<input class="button" type="submit" width="50" name="Submit" value="submit">
+</form>
+	</div>
+</body>
+</html>
